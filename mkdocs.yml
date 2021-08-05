@@ -1,0 +1,64 @@
+site_name: mccaj86's
+site_url: https://mccaj86.github.io
+
+nav:
+    - Home: index.md
+
+theme:
+  name: material
+  # logo: logo.png
+  # favicon: logo.png
+  features:
+  #  - navigation.expand
+    - navigation.top
+    - navigation.tabs
+  # custom_dir: overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      accent: cyan
+      primary: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: cyan
+      primary: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  highlightjs: True
+
+# extra_css:
+#   - stylesheets/extra.css
+
+markdown_extensions:
+  - mdx_math:
+      enable_dollar_delimiter: True
+  - toc:
+      permalink: True
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.extra
+  - pymdownx.snippets
+  - abbr
+  - footnotes
+  - meta
+
+extra_css:
+  - 'https://use.fontawesome.com/releases/v5.8.1/css/all.css'
+
+extra_javascript:
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-AMS_HTML'
+  - 'https://unpkg.com/thebelab@0.5.0/lib/index.js'
+  - 'scripts/mathjaxhelper.js'
+  - 'scripts/thebelabhelper.js'
+  - 'scripts/x3dom.js'
+
+
+
+copyright: Content prepared and curated by <a href="https://github.com/mccaj86">mccaj86</a>
